@@ -1,0 +1,3 @@
+lightstreamer-client-lib
+json
+time
