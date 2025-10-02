@@ -15,4 +15,4 @@ venv
 *.lock
 *.spec
 
-.gitignore
+
