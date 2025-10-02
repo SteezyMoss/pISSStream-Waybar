@@ -4,22 +4,20 @@ A custom plugin for [Waybar](https://github.com/AlexanderThaller/waybar), the hi
 
 This plugin provides a "constant stream" to the state of the urine tank on the International Space Station. All these other platforms have it, why not Waybar! (I was bored and curious) 
 
-## Installation
+This is a super simple plugin that connects to the lightstreamer client and returns a value. If you wanted, you could change the subscription item value to any of the other Symbols on https://demos.lightstreamer.com/ISSLive/
 
-### Prerequisites
+## Prerequisites
 
 - [Waybar](https://github.com/AlexanderThaller/waybar) installed
 - The current icon is unicode from Noto Emoji but could be anything you like
 
-### Easiest Installation
+## Installation
 
-1. Download the 
-
-
+The easiest way to install would be to clone the repo, and then simply move the executable within the dist/ folder to your preferred directory for exectuables. Then follow the steps in the configuration section.
 
 ## Configuration
 
-Add the following section to your `~/.config/waybar/config` under the `custom` module:
+Add the following section to your Waybar config.jsonc file. You will also need to add `custom/pISSStream` to modules-left, modules-center, or modules-right at the top of the config. Consult the waybar docs if you need more information on adding modules/plugins.
 
 ```jsonc
 "custom/your-plugin": {
@@ -30,12 +28,12 @@ Add the following section to your `~/.config/waybar/config` under the `custom` m
 ```
 
 **Config options:**
-- `interval`: [Description of what this controls]
+- `interval`: How often you would like Waybar to call for a refresh. Set to 5 seconds per default. 
 - [Other config options]
 
-### Example Configuration
+## CSS Configuration
 
-```jsonc
+```css
 "custom/your-plugin": {
     "exec": "~/.config/waybar/plugins/your-plugin.py",
     "interval": 30,
@@ -45,11 +43,7 @@ Add the following section to your `~/.config/waybar/config` under the `custom` m
 
 ## Usage
 
-Once configured, reload Waybar to see your plugin in action:
-
-```bash
-killall waybar && waybar
-```
+Once configured, reload Waybar to see your plugin in action!
 
 ## Contributing
 
@@ -68,4 +62,3 @@ Copyright (c) [year] [yourusername]
 
 ---
 
-*This is a template README. Please update with your plugin’s actual details, installation steps, and configuration options!*
