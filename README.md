@@ -1,4 +1,4 @@
-# Waybar Plugin: pISSStream Waybar
+# pISSStream for Waybar
 
 A custom plugin for [Waybar](https://github.com/AlexanderThaller/waybar), the highly customizable status bar for Wayland. 
 
