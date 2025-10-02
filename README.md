@@ -11,9 +11,31 @@ This is a super simple plugin that connects to the lightstreamer client and retu
 - [Waybar](https://github.com/AlexanderThaller/waybar) installed
 - The current icon is unicode from Noto Emoji but could be anything you like
 
+<<<<<<< HEAD
 ## Installation
 
 The easiest way to install would be to clone the repo, and then simply move the executable within the dist/ folder to your preferred directory for exectuables. Then follow the steps in the configuration section.
+=======
+### Manual Installation
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/SteezyMoss/pISSStream-Waybar.git
+   ```
+
+ 
+2. **[If compilation is needed] Build the plugin:**
+   ```bash
+   make
+   ```
+
+3. **Copy or symlink the plugin to your Waybar scripts/plugins directory:**
+   ```bash
+   cp your-plugin.py ~/.config/waybar/plugins/
+   # Or
+   ln -s /path/to/your-plugin.py ~/.config/waybar/plugins/
+   ```
+>>>>>>> ce4f54c (readme and requirements update)
 
 ## Configuration
 
